@@ -1,6 +1,9 @@
 import pygame       #import stuff
 import sys
 
+if getattr(sys, 'frozen', False):
+    os.chdir(sys._MEIPASS)
+
 pygame.init()       #initialization
 run = True
 
